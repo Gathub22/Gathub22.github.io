@@ -1,0 +1,42 @@
+#android{
+	background-color: green;
+}
+
+#flutter{
+	background-color: #2b90b1;
+}
+
+#sql{
+	background-color: crimson;
+}
+
+#html{
+	background-color: #e54c21;
+}
+
+#js{
+	background-color: #f0db4f;
+	color: #323330;
+}
+
+#php{
+	background-color: #787ab3;
+	color: black;
+}
+
+/* #php h4{
+	-webkit-text-stroke: white 1px;
+} */
+
+#python{
+	background-color: #336c99;
+	/* color: #ffcf3c; */
+}
+
+#java{
+	background-color: #c10000;
+}
+
+#firebase{
+	background-color: #ca9c02;
+}
