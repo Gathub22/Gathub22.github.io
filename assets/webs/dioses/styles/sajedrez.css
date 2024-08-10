@@ -1,0 +1,69 @@
+main>div{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    font-family: 'Macondo', cursive;
+}
+.tablero{
+    border: #834917 2px solid;
+}
+
+.tablero div{
+    width: 100%;
+}
+.tablero>div{
+    display: grid;
+    grid-template-rows: 64px;
+    grid-template-columns: repeat(8,64px);
+}
+.tablero img{
+    width: 90%;
+    height: 90%;
+}
+
+.tablero img:hover{
+    border-radius: 15px;
+    background-color: #ccb4679f;
+}
+.tablero{
+    border: #834917 2px solid;
+}
+.lateral{
+    border: #834917 2px solid;
+    width: 128px;
+    height: 512px;
+}
+.lateral div{
+    width: 100%;
+}
+.lateral>div{
+    display: grid;
+    grid-template-rows: 64px;
+    grid-template-columns: repeat(8,64px);
+}
+.lateral img{
+    width: 90%;
+    height: 90%;
+}
+.lateral img:hover{
+    border-radius: 15px;
+    background-color: #ccb4679f;
+}
+.par>div,.impar>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.par>div:nth-child(2n+1){
+    background-color: #e9c9ac;
+}
+.par>div:nth-child(2n){
+    background-color: #ba6b24;
+}
+.impar>div:nth-child(2n){
+    background-color: #e9c9ac;
+}
+.impar>div:nth-child(2n+1){
+    background-color: #ba6b24;
+}

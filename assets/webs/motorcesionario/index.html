@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Motorcesionario</title>
+
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="icon" href="img/logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="menu"><!--BARRA DE MENU-->		
+		<div id="enlaces">
+			<a href="index.html"><i class="fab fa-maxcdn"><span>.es</span></i></a>			
+			<a href="empresa.html">Quiénes somos</a>
+			<a href="diccionario.html">Diccionario</a>
+			<a href="ingreso.html">Regístrate</a>
+		</div>
+		<div id="buscador">
+			<input type="text" required placeholder="¿Qué vehículo buscas?">
+			<a href="error.html"><i class="fas fa-search"></i></a>
+		</div>
+		<form action="" id="formulario">	<!--FORMULARIO-->		
+				<div>
+					<label for="correo">Correo:</label>
+					<input type="email" required>
+				</div>	
+				<div>
+					<label for="contrasena">Contraseña:</label>
+					<input type="password" required minlength="8">
+				</div>				
+				<button><i class="fas fa-sign-in-alt"></i></button>						
+		</form>		
+	</nav>
+
+	<div id="cabecera">
+		<h1 id="titulo">Motorcesionario: El arte de conducir</h1>
+	</div>
+
+	<div id="portada">
+		<h2>Más que una familia</h2>
+		<p>¡El portal de coches de segunda mano más grande y selecto de España! Con más de 10 años de trayecto, tenemos una gran colección de vehículos en buen estado, y más de 7 millones de vendedores satisfechos desde 2015.</p>
+		<p>¡Bienvenido!</p>
+	</div>
+
+	<h1>Destacados</h1>
+
+	<div class="general">
+		<div class="pub">
+			<h2>Mercedes-Benz R171 SLK</h2>
+			<img src="img/mercedes1.jpg" alt="Foto de descapotable">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Madrid</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>167.500 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">Excelente deportivo descapotable bien cuidado. Comprado en el año 1998 y usado solo para viajar a la playa.</span>
+			<br>
+			<div class="compra">
+				<a href="merc.html">Comprar</a>
+				<span class="precio">19.885€</span>
+			</div>			
+		</div>
+
+		<div class="pub">
+			<h2>Nissan 300ZX</h2>
+			<img src="img/nissan1.jpg" alt="Foto de deportivo">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Murcia</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>157.500 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">Deportivo clásico japonés de 1988 muy cuidado. Posee aspiración turbo y neumáticos nuevos.</span>
+			<br>
+			<div class="compra">
+				<a href="nissan.html">Comprar</a>
+				<span class="precio">25.000€</span>
+			</div>			
+		</div>
+
+		<div class="pub">
+			<h2>Fiat 500</h2>
+			<img src="img/fiat1.jpg" alt="Foto de Fiat 500">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Gerona</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>15.257 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">Pequeño coche de gasolina Fiat 500 recién estrenado. Se vende por desuso.</span>
+			<br>
+			<div class="compra">
+				<a href="fiat.html">Comprar</a>
+				<span class="precio">15.500€</span>
+			</div>			
+		</div>
+
+		<div class="pub">
+			<h2>Volkswagen Passat 1.9 TDI Variant</h2>
+			<img src="img/vw1.jpg" alt="Foto de familiar">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Murcia</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>167.500 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">Vendo Volkswagen familiar de 2006 por razones económicas. Cuidado por una familia púdica, y no se ha fumado nunca dentro.</span>
+			<br>
+			<div class="compra">
+				<a href="vw.html">Comprar</a>
+				<span class="precio">15.000€</span>
+			</div>			
+		</div>
+
+		<div class="pub">
+			<h2>Volvo S40 1.9D</h2>
+			<img src="img/s40_1.jpg" alt="Foto de sedán">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Madrid</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>93.000 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">Sedán Volvo comprado en 2001 para ir a trabajar. ITV al día hasta noviembre de 2022 y neumáticos Michelín nuevos.</span>
+			<br>
+			<div class="compra">
+				<a href="s_40.html">Comprar</a>
+				<span class="precio">13.500€</span>
+			</div>			
+		</div>
+
+		<div class="pub">
+			<h2>Mitsubishi Montero 2000</h2>
+			<img src="img/mit1.jpg" alt="Foto de todoterreno">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Madrid</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>246.000 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">Todoterreno robusto usado por un granjero de la zona. Se vende por defunción del dueño.</span>
+			<br>
+			<div class="compra">
+				<a href="mit.html">Comprar</a>
+				<span class="precio">5.850€</span>
+			</div>			
+		</div>
+
+		<div class="pub">
+			<h2>Volvo XC90 T6</h2>
+			<img src="img/volvo1.jpg" alt="Foto de todocamino">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Madrid</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>163.042 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">URGENTE. Comprado en 2005 y utilizado para viajes de empresa por Europa. Tiene cambio automático y siete plazas con asientos de cuero. Libro incluido.</span>
+			<br>
+			<div class="compra">
+				<a href="volvo.html">Comprar</a>
+				<span class="precio">14.200€</span>
+			</div>			
+		</div>
+
+		<div class="pub">
+			<h2>Tesla Model S 2014</h2>
+			<img src="img/tesla1.jpg" alt="Foto de sedán">
+			<br>
+			<div class="caract">
+				<div class="ciudad">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Valencia</span>
+				</div>
+
+				<div class="kms">
+					<i class="fas fa-road"></i>
+					<span>7.391 KM</span>
+				</div>
+			</div>			
+			<br>
+			<span class="desc">Se vende Tesla Model S por desuso. La mayor parte del tiempo estuvo en garage. ITV recién pasada.</span>
+			<br>
+			<div class="compra">
+				<a href="tesla.html">Comprar</a>
+				<span class="precio">30.000€</span>
+			</div>			
+		</div>
+	</div>
+
+	<div id="mas">
+		<a href="error.html"><h1>Ver más</h1></a>
+	</div>	
+	<div class="pie">
+		<div>
+			<span>Motorcesionario 2021© Todos los derechos reservados. <a href="empresa.html">Saber más</a></span>						
+		</div>
+		<div>			
+			<a href="mapa.html">Mapa web</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reporte</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="icon" href="img/logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="menu"><!--BARRA DE MENU-->		
+		<div id="enlaces">
+			<a href="index.html"><i class="fab fa-maxcdn"><span>.es</span></i></a>			
+			<a href="empresa.html">Quiénes somos</a>
+			<a href="diccionario.html">Diccionario</a>
+			<a href="ingreso.html">Regístrate</a>
+		</div>
+		<form action="" id="formulario">	<!--FORMULARIO-->		
+				<div>
+					<label for="correo">Correo:</label>
+					<input type="email" required>
+				</div>	
+				<div>
+					<label for="contrasena">Contraseña:</label>
+					<input type="password" required minlength="8">
+				</div>				
+				<button><i class="fas fa-sign-in-alt"></i></button>						
+		</form>		
+	</nav>
+	<div id="contenido">
+		<form action="" id="reporte">
+			<h1>Rellene su reporte</h1>
+			<div class="datos">
+				<div class="dato">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" minlength="2" required>
+				</div>
+				<div class="dato">
+					<label for="apellidos">Apellidos:</label>
+					<input type="text" id="apellidos" minlength="4" required>
+				</div>		
+				<div class="dato">
+					<label for="email">Email de contacto: </label>
+					<input type="email" required>
+				</div>	
+			</div>
+			<br>
+			<div id="texto">
+				<label for="razon" id="razon">¿Por qué quieres reportar esta publicación? <a href="https://www.tuabogadodefensor.com/proteccion-comercio-electronico/#timos" target="_blank">Posibles motivos</a></label>
+				<textarea name="razon" id="razon" cols="20" rows="10" required minlength="120"></textarea>
+			</div>
+			<br>
+			<div id=condiciones>
+				<div>
+					<label for="condiciones">Acepto la <a href="error.html" target="_blank">Política de Privacidad</a> y las <a href="error.html" target="_blank">Normas de uso</a>.</label>
+					<input type="checkbox" required>
+				</div>
+				<div id="boton">
+					<button>Enviar</button>
+				</div>						
+			</div>
+			
+		</form>
+	</div>		
+	<div class="pie">
+		<div>
+			<span>Motorcesionario 2021© Todos los derechos reservados. <a href="empresa.html">Saber más</a></span>						
+		</div>
+		<div>			
+			<a href="mapa.html">Mapa web</a>
+		</div>
+	</div>
+</body>
+</html>

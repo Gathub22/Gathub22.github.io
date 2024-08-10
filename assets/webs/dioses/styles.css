@@ -1,0 +1,209 @@
+body{
+	margin: 0px;
+	font-family: 'Macondo', cursive;
+}
+main>h1,article>h1{
+	text-align: center;
+	font-size: 3em;
+}
+#collage{
+	display: grid;
+	width: 90%;
+	margin: auto;
+	grid-template-rows: repeat(12,1fr);
+	grid-template-columns: repeat(12, 1fr);
+	height: 90vh;
+}
+#collage img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#collage .f1{
+	grid-row: 1/7;
+	grid-column: 1/3;
+}
+#collage .f2{
+	grid-row: 1/7;
+	grid-column: 3/7;
+}
+#collage .f3{
+	grid-row: 1/4;
+	grid-column: 7/9;
+}
+#collage .f4{
+	grid-row: 1/4;
+	grid-column: 9/-1;
+}
+#collage .f5{
+	grid-row: 7/-1;
+	grid-column: 1/7;
+}
+#collage .f6{
+	grid-row: 4/-1;
+	grid-column: 7/-1;
+}
+#articulos{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: stretch;
+	font-size: 1.25rem;
+}
+#articulos>article{
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: space-between;
+	padding: 1em;
+}
+#articulos h1{
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 0px;
+}
+#articulos p{
+	text-align: justify;
+}	
+#articulos>article img{
+	float: right;
+}
+#articulos>article button{
+	width: 100%;
+	font-size: 2em;
+	background-color: wheat;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Macondo', cursive;
+}
+#pc{
+	width: 90%;
+	margin: auto;
+}
+table{
+	border-collapse: collapse;
+	margin-bottom: 2em;
+}
+th{
+	background-color: black;
+	color: white;
+	border: black solid 2px;
+	padding: 1em;
+	font-size: 1.7rem;
+}
+td{
+	background-color: wheat;
+	border: black solid 2px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+table span{
+	display: block;
+	margin-bottom: 1rem;
+}
+#pc td{
+	width: 16.66%;
+	padding: 1em;
+}
+#pc img{
+	width: 100%;
+}
+#movil{
+	width: 100%;
+}
+#movil table tr{
+	display: flex;
+	flex-direction: column;
+}
+#movil img{
+	width: 50%;
+}
+#movil th{
+	padding: 0em;
+}
+#movil td{
+	padding: 1em;
+}
+#movil h1{
+	margin: 0px;
+	font-size: 1em;
+}
+#movil tr>th:first-child{
+	padding: 1rem;
+}
+#movil tr>th:first-child>h1{
+	font-size: 3rem;
+	text-decoration: underline;
+}
+
+@media (min-width: 1200px){
+	#articulos{
+		width: 60%;
+		margin: auto;
+	}
+	#articulos>article{
+		max-width: 700px;
+		width: 50%;
+		box-sizing: border-box;
+	}
+	#articulos>article img{
+		width: 30%;
+	}
+	#pc{
+		display: table;
+	}
+	#movil{
+		display: none;
+	}
+}
+@media (max-width: 1199px) and (min-width: 576px){
+	#articulos{
+		width: 100%;
+	}
+	#articulos>article{
+		width: 50%;
+		box-sizing: border-box;
+	}
+	#articulos>article img{
+		width: 30%;
+	}
+	#pc{
+		display: table;
+		width: 100%;
+	}
+	thead{
+		width: 100%;
+	}
+	#pc th{
+		padding: 0.3em;
+	}
+	#pc td{
+		font-size: 1.3rem;
+		padding: 0px;
+	}
+	#movil{
+		display: none;
+	}
+}
+@media (max-width: 575px){
+	#articulos{
+		flex-direction: column;
+		font-size: 1.10rem;
+	}
+	#articulos>article{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	#articulos img{
+		width: 50%;
+	}
+	#pc{
+		display: none;
+	}
+	#tablet{
+		display: none;
+	}
+	#movil{
+		display: table;
+	}
+}

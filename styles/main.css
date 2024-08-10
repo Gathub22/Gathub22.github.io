@@ -6,11 +6,16 @@
 	background-size: cover;
 }
 
+#main{
+	width: 70%;
+	margin: auto;
+}
+
 #content{
 	display: grid;
 	grid-template-rows: repeat(3, auto);
 	grid-template-columns: 3fr 1fr;
-	margin-top: 1em;
+
 	gap: 1em
 }
 
@@ -24,6 +29,13 @@
 	grid-column: 2/3;
 }
 
+#profile a{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1.1em;
+	width: 100%;
+}
 
 #skills{
 	display: grid;
@@ -48,4 +60,35 @@
 
 #skills h4{
 	margin: 0px;
+}
+
+#webs-card{
+	width: 100%;
+}
+
+
+#webs{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(1, auto);
+	gap: 2em;
+}
+
+#webs a{
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+#webs a:hover{
+	transform: scale(1.02);
+}
+/* #webs a:hover{
+	border: 5px;
+} */
+
+#webs a>.card-img-top{
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

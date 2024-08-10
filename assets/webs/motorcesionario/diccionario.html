@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diccionario</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="icon" href="img/logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="menu"><!--BARRA DE MENU-->		
+		<div id="enlaces">
+			<a href="index.html"><i class="fab fa-maxcdn"><span>.es</span></i></a>			
+			<a href="empresa.html">Quiénes somos</a>
+			<a href="diccionario.html">Diccionario</a>
+			<a href="ingreso.html">Regístrate</a>
+		</div>
+		<form action="" id="formulario">	<!--FORMULARIO-->		
+				<div>
+					<label for="correo">Correo:</label>
+					<input type="email" required>
+				</div>	
+				<div>
+					<label for="contrasena">Contraseña:</label>
+					<input type="password" required minlength="8">
+				</div>				
+				<button><i class="fas fa-sign-in-alt"></i></button>						
+		</form>		
+	</nav>
+	<div id="diccionario">
+		<h1>Diccionario de Motorcesionario</h1>
+
+		<div id="intro">
+			<p>A la hora de comprar pueden surgirnos alguna dudas de novato:</p>
+		</div>
+		<dl>
+			<dt>¿0 a 100?</dt>
+			<div id="acelero">
+				<dd>Una manera de medir la aceleración de un vehículo es el tiempo que tarda desde que se pisa a fondo el acelerador hasta que el coche alcanza los 100km/h. Una medida que hay que investigar antes de hacernos con un coche, pues siempre hay momentos en la carretera en donde tener un motor ágil puede incluso sacarnos de un peligro.</dd>
+				<img src="img/acc.jpg" alt="Aceleración">
+			</div>
+
+			<dt>Gasolina</dt>
+			<dd>Existen tres tipos de vehículos con respecto al combustible que utilizan: los vehículos de gasolina, los vehículos de diésel y los vehículos eléctricos. </dd>
+			<dd>Especial antención a los coches de gasolina pues pueden elegir libremente entre diferentes tipos de gasolina, el estándar 91, el Premium 95 y el Premium 98. Cuanto mayor sea el número, mayor es el octanaje de cada tipo y por tanto, más durará el combustible a la hora de ser quemado. Por lo general, se puede cambiar entre un tipo y otro sin problema. Sin embargo hay que respetar el tipo que recomienda el fabricante para tu vehículo. <a href="https://www.savings.com.au/car-loans/different-fuel-types-explained" target="_blank">1</a></dd>
+			<dd>Los coches diésel se distinguen por las características de su combustible. Sus motores funcionan de manera diferente a los gasolina normalmente y suelen consumir mucho menos combustible que los gasolina. Sin embargo tienen la penalización de no alcanzar velocidades muy altas que con la gasolina.</dd>
+			<dd>¿Qué pasa si metemos gasolina a un coche de diésel? ¿Y viceversa? Fifth Gear nos lo explica: <iframe id="gasolinaVid" width="560" height="315" src="https://www.youtube.com/embed/GL9-i9tcESU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+			<dd>Los coches eléctricos destacan por ser muy novedosos en comparación con el resto, pues no generan emisiones. No obstante, los vehículos eléctricos se enfrentan a múltiples <a href="https://www.hotcars.com/the-main-problems-that-electric-car-owners-face/" target="_blank">problemas</a>, como un coste de mantenimiento mayor y una recarga lenta.</dd>
+
+			<dt>Seguridad en accidentes</dt>
+			<dd>A la hora de comprar un vehículo es muy importante informarse antes de su comportamiento cuando ocurre un accidente. Es por eso que en Europa tenemos el programa Euro-NCAP (Programa Europeo de Evaluación de Automóviles Nuevos), que se encarga de calificar con estrellas la seguridad que ofrece un vehículo cuando sufre un siniestro.</dd>
+			<dd>En general, los vehículos antiguos presentan sistemas de seguridad muy pobres con respecto a los vehículos lanzados a partir de los 2000.<video controls width="560" height="315" muted><source src="media/choques.mp4" type="video/mp4">Tu navegador no soporta la reproducción de medios</video></dd>
+			<dd>Puedes investigar tu vehiculo <a href="https://www.euroncap.com/es">aquí</a>.</dd>
+		</dl>
+		<div id="cargando">
+			<span>Cargando... <i class="fas fa-spinner fa-pulse"></i></span>
+		</div>
+	</div>
+
+	<div class="pie">
+		<div>
+			<span>Motorcesionario 2021© Todos los derechos reservados. <a href="empresa.html">Saber más</a></span>						
+		</div>
+		<div>			
+			<a href="mapa.html">Mapa web</a>
+		</div>
+	</div>
+</body>
+</html>

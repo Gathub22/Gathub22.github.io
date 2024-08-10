@@ -1,0 +1,835 @@
+﻿@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+	margin: 0px;
+	background-color: #f5f5f5;
+}
+
+nav{							/*MENU			v------------------------v*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1e3be3;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	color: white;
+	flex-wrap: wrap;
+	flex-direction: row;
+	font-family: 'Montserrat', sans-serif;
+	border-bottom: solid #1931bf 0.5em;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+}
+
+nav i span{
+	font-size: 0.6em;
+	font-style: italic;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+}
+
+nav #buscador{
+	background-color: #1931bf;
+	padding: 0.1em;
+	border-radius: 1em;
+	padding-left: 0.8em;
+}
+
+nav #buscador input{
+	color: white;
+	background-color: #1931bf;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	border: 0px;
+}
+
+nav #buscador a{
+	color: white;
+	font-size: 0.6em;
+
+}
+
+div#enlaces{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+div#enlaces a{					/*ENLACES MENU*/
+	color: white;
+	text-decoration: none;
+	padding-right: 1em;
+	font-size: 1.2em;
+	font-family: 'Montserrat';	
+
+}
+
+nav i{
+	font-size: 3em;
+	padding: 0.18em;
+	padding-left: 0.3em;
+	padding-right: 0.4em;
+}
+
+nav #formulario button{
+	background-color: #1e3be3;
+	border: none;
+	color: white;
+}
+nav form{			/*FORMULARIO*/
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 1.2em;
+	padding-right: 0.6em;
+	margin-left: 1em;
+}
+
+nav label{			
+	color: white;
+	padding-right: 0.3em;
+}
+
+nav #formulario input{			
+	margin-right: 1em;
+	font-size: 1.1em;
+	color: white;
+	background-color: #1e3be3;
+	border-color: white;
+	border-width: 0px;
+	border-bottom-width: 1px;
+}									/*^-------------------------------^*/
+
+div#cabecera{		/*CABECERA*/
+	height: 50vh;
+	background-image: url('../img/cabecera.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 85%;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1#titulo{
+	text-align: center;
+	margin-bottom: 0.5rem;
+	margin-left: 1em;
+	display: flex;
+	align-items: flex-end;
+	color: white;
+	font-size: 2em;
+}
+
+div#portada{		/*BIENVENIDA*/
+	font-family: 'Noto Sans', sans-serif;
+	margin: auto;
+	background-color: #1e3be3;
+	color: white;
+	width: 50%;
+	margin-top: 2em;
+	border-radius: 1em;
+	padding: 1rem;
+	text-align: justify;
+}
+
+body>h1{
+	display: inline;
+	font-family: 'Noto Sans', sans-serif;
+	margin: 1em;
+	padding: 0.5em;
+	background-color: #1e3be3;
+	color: white;
+	border-radius: 1em;
+}
+
+div.general{		/*MURO DE COCHES	v-----------------------v*/	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 3em;
+}
+
+div.pub{
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #1e3be3;
+	color: white;
+	width: 30%;
+	min-width: 300px;
+	margin-top: 2em;
+	border-radius: 1em;
+	padding: 1rem;
+	border: solid #1931bf 0.5em;
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+}
+
+div.pub h2{
+	font-size: 2em;
+	text-align: center;
+}
+
+div.pub img{;
+	width: 100%;
+	height: auto;
+	border-radius: 1em;
+}
+
+div.pub .caract{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 1em;
+	font-size: 1.3em;
+	background-color: #1931bf;
+	border-radius: 1em;
+}
+
+div.pub .desc{
+	text-align: justify;
+	font-size: 1.5em;
+}
+
+div.pub .compra{
+	margin-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+div.pub a{
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	background-color: #1931bf;
+	border: outset 0.2rem;
+	border-radius: 1em;
+	font-size: 1.5em;
+	padding: 0.4em;
+	padding-bottom: 0.45em;
+	text-decoration: none;
+}
+
+div.pub .precio{					
+	font-size: 3em;
+}
+
+#mas{
+	display: flex;	
+	justify-content: center;
+}
+
+#mas a{
+	text-decoration: none;
+}
+
+#mas h1{
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	padding: 1em;
+	border-radius: 1em;
+
+}								/*^-------------------------------^*/
+
+
+div.pie{						/*PIE DE PAGINA*/
+	background-color: #1e3be3;
+	border-top: solid #1931bf 0.5em;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	padding: 1em;
+	color: white;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.pie a{
+	color: white;
+	font-family: 'Noto Sans', sans-serif
+}
+
+
+
+div.publicacion{				/*PUBLICACIONES		v-----------------v*/
+	font-family: 'Noto Sans', sans-serif;
+	margin: auto;
+	background-color: #1e3be3;
+	color: white;
+	width: 75%;
+	margin-top: 6.5em;
+	margin-bottom: 3em;
+	border-radius: 1em;
+	padding: 1rem;
+	text-align: justify;
+	border: solid #1931bf 0.5em;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+}
+
+div.publicacion h2{
+	text-align: center;
+	font-size: 4em;
+	margin-bottom: 0em;
+	margin-top: 0.3em;
+}
+
+.fecha{
+	background-color: #1931bf;
+	font-size: 1.4em;
+	padding: 0.5em;
+	border-radius: 1em;
+	margin-left: 1.5em;
+}
+
+div.publicacion>a{
+	font-size: 3em;
+	color: white;
+}
+
+div.cuerpo{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 1em;
+}
+
+div.contenido{
+	display: inline;
+	width: 50%;
+	background-color: #1931bf;
+	border-radius: 1em;
+	margin-bottom: 1em;
+}
+
+div.contenido .texto{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.2em;
+	margin: 1em;
+	display: block;
+}
+
+div.contenido .detalle{
+	display: block;
+	background-color: #1e3be3;
+	border-radius: 1em;
+	text-align: center;
+	font-size: 2em;
+	margin: 0.5em;
+}
+
+div.contenido div.compra{
+	margin-bottom: 1em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+div.contenido div.compra a{
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	border: outset 0.2rem;
+	border-radius: 1em;
+	font-size: 2.5em;
+	padding: 0.4em;
+	padding-bottom: 0.45em;
+	text-decoration: none;
+}
+
+div.compra .precio{
+	font-size: 2.5em;
+	background-color: #1e3be3;
+	border-radius: 1em;
+	padding: 0.5em;	
+}
+
+div.publicacion img{
+	width: 45%;
+	min-width: 325px;
+	height: 100%;
+	margin: 0.8em;
+	margin-bottom: 1rem;
+	border-radius: 1em;
+}											/*^----------------------^*/
+
+
+#reporte{				/*REPORTE			v------------------------v*/
+	width: 55%;
+	margin: auto;
+	margin-bottom: 8.6em;
+	margin-top: 12em;
+	background-color: #1e3be3;
+	border-radius: 1em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;	
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+}
+
+#reporte h1{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+#reporte .datos{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#reporte .datos .dato{
+	margin-right: 1em;
+	margin-left: 1em;
+	margin: 0.3em;
+}
+
+#reporte label{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 1.2em;
+}
+
+#reporte input{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	border-color: white;
+	border-width: 0px;
+	border-bottom-width: 1px;
+}
+
+#reporte .datos .dato input{
+	margin: 0.3em;
+}
+
+#reporte #texto label{
+	margin: 1em;
+	font-size: 1.3em;
+}
+
+#reporte a{
+	color: white;
+}
+
+#reporte #texto textarea{
+	width: 70%;
+	max-width: 70%;
+	min-width: 70%;
+	margin: 1em;
+	padding: 1em;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: justify;
+	background-color: #1931bf;
+	border-radius: 0.5em;
+	border: none;
+}
+
+#reporte #condiciones{
+	margin: 1em;
+}
+
+#reporte #condiciones a{
+	color: white;
+}
+
+#reporte #boton{
+	display: flex;
+	justify-content: right;
+	margin-bottom: 2em;
+	margin-right: 2em;
+}
+
+#reporte button{
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	border: outset 0.2rem;
+	border-radius: 1em;
+	font-size: 1.5em;
+	padding: 0.4em;
+	padding-bottom: 0.45em;
+}											/*^---------------------------^*/
+
+					/*ERROR*/
+#error{
+	display: flex;
+	margin-left: 2em;
+	margin-top: 10em;
+	margin-bottom: 24em;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: left;
+	flex-direction: column;
+}
+
+#error h1{
+	display: inline;
+}
+
+#error div{
+	display: flex;
+	align-items: center;
+}
+
+#error img{
+	margin-left: 1em;
+	width: 5em;
+}
+
+#error span{
+	margin-top: 3em;
+}
+
+#error #equipo{
+	font-style: italic;
+}
+
+					/*INGRESO 						v--------------------------v*/
+.decoracion{
+	margin-top: 5em;
+	height: 14vh;
+	background-image: url('../img/ingreso.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 70%;
+}
+
+#ingreso{
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 3em;
+	margin-bottom: 3.2em;
+}
+
+.ventanaIngreso{
+	width: 45%;
+	padding: 1em;
+	background-color: #1e3be3;
+	border-radius: 1em;	
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+}
+
+#registro{
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2em;
+}
+
+#registro .apartado{
+	margin-bottom: 1.2em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#registro .apartado div{
+	display: inline;
+}
+
+#registro .apartado div input{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	border-color: white;
+	border-width: 0px;
+	border-bottom-width: 1px;
+	width: 7em;
+	font-size: 1.2em;
+}
+
+#registro .apartado div input#apellidos{
+	width: 15em;
+}
+
+#registro .apartado div input#edad{
+	width: 3em;
+}
+
+#registro>.dato{
+	margin-top: 1em;
+}
+
+#registro #adv{
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+#registro #consentimiento{
+	
+}
+
+#registro a{
+	color: white;
+}				
+
+#registro .boton{
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+#registro .boton button{
+	color: white;
+	background-color: #1931bf;
+	border: none;
+	width: 50%;
+	border-radius: 0.5em;
+	font-size: 1.8em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#ventana2{
+	display: flex;
+	align-content: space-around;
+	flex-direction: column;
+	max-height: 70vh;
+}
+#iniciarS{
+	width: 100%;
+	height: 50vh;
+	background-color: #1931bf;
+	border-radius: 0.5em;
+	display: flex;
+	font-size: 2em;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+}
+
+#iniciarS .email input{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	border-radius: 1em;
+	border: none;
+	width: 11em;
+	font-size: 0.7em;
+	margin-bottom: 1em;
+	padding: 0.4em;
+}
+
+#iniciarS .cont input{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	border-radius: 1em;
+	border: none;
+	width: 7em;
+	font-size: 1.2em;
+}
+
+#ventana2 .boton button{
+	color: white;
+	background-color: #1e3be3;
+	border: none;
+	border-radius: 0.5em;
+	margin: 2em;
+	font-size: 1.6em;
+	font-family: 'Montserrat', sans-serif;
+}													/*^---------------------------^*/
+
+#cabecera2{			/*NUESTRA EMPRESA				v-----------------------------v*/
+	margin-top: 5em;
+	height: 28vh;
+	background-image: url('../img/cabecera2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 45%;
+}			
+
+#empresa{
+	margin-top: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#empresa #cabeza{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#empresa #cabeza div i{
+	color: white;
+	background-color: #1e3be3;
+	font-size: 5em;
+	padding: 0.5em;
+	border-radius: 2em;
+}
+
+#empresa #descEmpresa{
+	width: 50%;
+	font-size: 1.5em;
+	margin: auto;
+	text-align: justify;
+}
+
+#empresa #descEmpresa img{
+	float: right;
+	width: 30%;
+}
+
+#empresa .imp{
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 1em;
+	text-align: center;
+}
+
+#descEmpresa a{
+	color: black;
+} 
+
+#empresa table{
+	border-collapse: collapse;
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #1e3be3;
+	border-radius: 0.5em;
+	color: white;
+	width: 100%;
+}
+
+td, th{
+	border: 1em white;
+	padding: 0.5em;
+	text-align: center;
+	border: solid #1931bf 0.2em;
+}
+
+th{
+	background-color: #1931bf;
+}
+
+#descEmpresa .nota{
+	font-size: 0.8em;
+}
+
+#empresa #contacto{
+	margin: auto;
+	background-color: #e0e0e0;
+	border-radius: 1em;
+	width: 40%;
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+#empresa #contacto div{
+	display: flex;
+	flex-direction: column;
+}
+
+#contacto img{
+	width: 50%;
+}
+
+#contacto a{
+	color: black;
+}
+
+#empresa div{
+	text-align: center;
+}											/*^-------------------------------^*/
+
+
+#diccionario{				/*DICCIONARIO	v---------------------------------v*/
+	width: 60%;
+	margin: auto;
+	margin-top: 10em;
+	border-radius: 1em;
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	background-color: #1e3be3;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2em;
+	padding: 1em;
+}
+
+#diccionario a{
+	color: white;
+}
+
+dl dt{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+dl dd{
+	margin: 1em;
+}
+
+dl #acelero{
+	display: flex;
+	
+}
+
+dl #acelero dd{
+	width: 50%;
+}
+
+dl #acelero img{
+	width: 50%;
+}
+
+#cargando{
+	display: inline;
+	margin: auto;
+	color: black;
+	background-color: white;
+	font-size: 2em;
+	padding: 0.5em;
+	border-radius: 2em;
+}											/*^-----------------------------------^*/
+
+
+#mapa{						/*MAPA WEB*/
+	margin-top: 6em;
+	margin-bottom: 2.4em;
+	margin-left: 2em;
+}
+
+.imagenes{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.imagenes div{
+	width: 25%;
+	min-width: 300px;
+}
+
+.imagenes h3{
+	text-align: center;
+}
+
+.imagenes img{
+	width: 100%;
+	
+}
+
+										/*	https://www.youtube.com/watch?v=dQw4w9WgXcQ	*/
