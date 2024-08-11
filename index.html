@@ -3,9 +3,118 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>¡Hola, soy Raúl!</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" >
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/cards.css">
+	<link rel="icon" href="https://avatars.githubusercontent.com/u/117179675">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body>
-	<p>Hola mundo</p>
+<body data-bs-theme="dark">
+
+	<div id="head"></div>
+
+	<div class="contanier mt-4" id="main">
+		<div class="container p-0 m-0" id="content">
+			<div class="card" id="info">
+				<div class="card-body">
+					<h2 class="card-title">😸 ¡Bienvenido a mi perfil!</h2>
+					<p class="card-text">Aquí puedes conocer mis habilidades y trabajos que he ido realizando durante estos años:</p>
+					<ul>
+						<li>🖥️ Soy un estudiante apasionado de la informática</li>
+						<li>🇪🇸 Vivo en España</li>
+						<li>🎓 Me encanta aprender nuevas posibilidades</li>
+						<li>🔎 Busco proyectos en los que desarrollar mis habilidades</li>
+					</ul>
+					<br>
+					<h3>🛠️ Manejo muchas cosas...</h3>
+					<hr>
+					<div class="card" id="skills">
+						<div class="card" id="android">
+							<i class="fa-brands fa-android"></i>
+							<h4 class="card-title">Android</h4>
+						</div>
+						<div class="card" id="flutter">
+							<i class="fa-brands fa-flutter"></i>
+							<h4 class="card-title">Flutter</h4>
+						</div>
+						<div class="card" id="sql">
+							<i class="fa-solid fa-database"></i>
+							<h4 class="card-title">SQL</h4>
+						</div>
+						<div class="card" id="html">
+							<i class="fa-solid fa-code"></i>
+							<h4 class="card-title">HTML/CSS</h4>
+						</div>
+						<div class="card" id="js">
+							<i class="fa-brands fa-square-js"></i>
+							<h4 class="card-title">JavaScript</h4>
+						</div>
+						<div class="card" id="php">
+							<i class="fa-brands fa-php"></i>
+							<h4 class="card-title">PHP</h4>
+						</div>
+						<div class="card" id="python">
+							<i class="fa-brands fa-python"></i>
+							<h4 class="card-title">Python</h4>
+						</div>
+						<div class="card" id="java">
+							<i class="fa-brands fa-java"></i>
+							<h4 class="card-title">Java</h4>
+						</div>
+						<div class="card" id="firebase">
+							<i class="fa-solid fa-fire"></i>
+							<h4 class="card-title">Firebase</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" id="profile">
+				<img src="https://avatars.githubusercontent.com/u/117179675" class="rounded-circle m-2" alt="Gato's avatar">
+				<div class="card-body">
+					<h5 class="card-title">Raúl Gutiérrez Beltrán</h5>
+					<p class="card-text">Si estás interesado aquí puedes ver más trabajos.</p>
+					<a href="https://github.com/Gathub22" class="btn btn-primary" ><i class="fa-brands fa-github"></i><span>Ver mi perfil</span></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" id="webs-card">
+			<div class="card-body">
+				<h3 class="card-title">Mis páginas web</h3>
+				<p class="card-text">He aquí un conjunto de webs hechas con cariño para practicar:</p>
+				<div id="webs">
+					<a class="card link-offset-3-hover" href="assets/webs/motorcesionario/index.html">
+						<div id="motorc" class="card-img-top"><i class="fab fa-maxcdn"></i></div>
+						<div class="card-body">
+							<h4>Motorcesionario</h4>
+							<p>Una completa moderna tienda de coches de segunda mano utilizando únicamente Flexbox.</p>
+						</div>
+					</a>
+					<a class="card" href="assets/webs/dioses/index.html">
+						<div id="dioses" class="card-img-top"><img src="assets/webs/dioses/assets/img/logo.png"></div>
+						<div class="card-body">
+							<h4>Casa de Netjer</h4>
+							<p>Una web interesante sobre los dioses egipcios. ¡Con un ajedrez incluido!</p>
+						</div>
+					</a>
+					<a class="card" href="assets/webs/politicos/index.html">
+						<div id="pol" class="card-img-top"><i class="fas fa-landmark"></i></div>
+						<div class="card-body">
+							<h4>Políticos</h4>
+							<p>Una sencilla página con Font Awesome y fuente importada que describe a los candidatos políticos de la elecciones de 2019, con una entrevista a Sergio Tarrero,</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<span>Hecho con <i class="fa-brands fa-bootstrap"></i>ootstrap</span>
+	</footer>
+
 </body>
 </html>

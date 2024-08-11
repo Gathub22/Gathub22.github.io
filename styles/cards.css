@@ -1,0 +1,59 @@
+#android{
+	background-color: green;
+}
+
+#flutter{
+	background-color: #2b90b1;
+}
+
+#sql{
+	background-color: crimson;
+}
+
+#html{
+	background-color: #e54c21;
+}
+
+#js{
+	background-color: #f0db4f;
+	color: #323330;
+}
+
+#php{
+	background-color: #787ab3;
+	color: black;
+}
+
+#python{
+	background-color: #336c99;
+}
+
+#java{
+	background-color: #c10000;
+}
+
+#firebase{
+	background-color: #ca9c02;
+}
+
+#webs #motorc{
+	background-color: #1e3be3;
+	color: white;
+	font-size: 5em;
+	border-bottom: #1931bf 8px solid;
+}
+
+#webs #dioses{
+	background-color: white;
+	border-bottom: #a8840d 8px solid;
+	img{
+		height: 70%;
+	}
+}
+
+#webs #pol{
+	background-color: #ffd700;
+	color: black;
+	font-size: 5em;
+	border-bottom: black 8px solid;
+}
