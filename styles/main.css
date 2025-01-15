@@ -95,6 +95,14 @@
 	align-items: center;
 }
 
+.game .card .card-body{
+	display: flex;
+	justify-content: flex-end;
+	background: url("../assets/img/smashing.png") 100% 40%;
+	background-size: cover;
+	border-radius: var(--bs-border-radius);
+}
+
 footer{
 	margin-top: 2em;
 	margin-bottom: 2em;
